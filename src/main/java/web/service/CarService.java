@@ -21,7 +21,7 @@ public class CarService {
         if (number <= cars.size() && number >= 0) {
             return List.copyOf(cars.subList(0, number));
         } else {
-            return List.copyOf(cars.subList(number, cars.size()));
+            return List.copyOf(cars.subList(0, cars.size()));
         }
     }
 }
